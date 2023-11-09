@@ -1,11 +1,11 @@
 name: Build
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -26,4 +26,5 @@ jobs:
       - name: Validate with Maven
         env:
           MAVEN_OPTS: "-Xmx6144m"
-        run: mvn --batch-mode install
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        run: mvn --batch-mode -DuseGitHubPackages=true deploy
