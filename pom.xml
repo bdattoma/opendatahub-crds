@@ -108,7 +108,7 @@
                     <!-- Workaround for: https://github.com/fabric8io/kubernetes-client/issues/5580 -->
                     <source>src/main/resources/crds/odh-manifests-data-science-pipelines-operator-crd.yaml</source>
                     <urls>
-                        https://raw.githubusercontent.com/ExcelentProject/sokar/main/open-data-hub/install/crds.yaml,
+                        https://raw.githubusercontent.com/ExcelentProject/sokar/main/open-data-hub/install/deploy.yaml,
                         https://raw.githubusercontent.com/ExcelentProject/sokar/main/open-data-hub/client/odh-manifests-codeflare-crd.yaml,
                         https://raw.githubusercontent.com/ExcelentProject/sokar/main/open-data-hub/client/odh-manifests-dashboard-crd.yaml,
                         <!-- https://raw.githubusercontent.com/ExcelentProject/sokar/main/open-data-hub/client/odh-manifests-data-science-pipelines-operator-crd.yaml, -->
