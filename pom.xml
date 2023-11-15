@@ -10,6 +10,35 @@
 
     <packaging>jar</packaging>
 
+    <name>OpenDataHub crds</name>
+    <url>https://github.com/ExcelentProject/opendatahub-crds</url>
+    <description>Fluent classes of opendatahub crds for fabric8 client</description>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>kornys</id>
+            <name>David Kornel</name>
+            <email>kornys@outlook.com</email>
+        </developer>
+        <developer>
+            <id>Frawless</id>
+            <name>Jakub Stejskal</name>
+            <email>xstejs24@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/ExcelentProject/opendatahub-crds</url>
+    </scm>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
