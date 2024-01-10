@@ -43,9 +43,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <fabric8.version>6.9.2</fabric8.version>
-        <sundrio.version>0.101.3</sundrio.version>
-        <lobbok.version>1.18.30</lobbok.version>
+        <fabric8.version>6.10.0</fabric8.version>
         <maven.compiler.version>3.11.0</maven.compiler.version>
     </properties>
 
@@ -64,6 +62,13 @@
                 <artifactId>common</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>kubernetes-client-bom-with-deps</artifactId>
+                <version>${fabric8.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -71,28 +76,23 @@
         <dependency>
             <groupId>io.fabric8</groupId>
             <artifactId>openshift-client</artifactId>
-            <version>${fabric8.version}</version>
         </dependency>
         <dependency>
             <groupId>io.fabric8</groupId>
             <artifactId>kubernetes-model</artifactId>
-            <version>${fabric8.version}</version>
         </dependency>
         <dependency>
             <groupId>io.fabric8</groupId>
             <artifactId>generator-annotations</artifactId>
-            <version>${fabric8.version}</version>
         </dependency>
         <dependency>
             <groupId>io.sundr</groupId>
             <artifactId>builder-annotations</artifactId>
-            <version>${sundrio.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lobbok.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -134,13 +134,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!-- Workaround for: https://github.com/fabric8io/kubernetes-client/issues/5580 -->
-                    <source>src/main/resources/crds/odh-manifests-data-science-pipelines-operator-crd.yaml</source>
                     <urls>
                         https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/install/deploy.yaml,
                         https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-codeflare-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-dashboard-crd.yaml,
-                        <!-- https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-data-science-pipelines-operator-crd.yaml, -->
+                        https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-data-science-pipelines-operator-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-kserve-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-model-mesh-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/sokar/main/open-data-hub/client/odh-manifests-model-mesh-overlays-odh-crd.yaml,
