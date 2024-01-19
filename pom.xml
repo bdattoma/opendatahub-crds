@@ -135,17 +135,17 @@
                 </executions>
                 <configuration>
                     <urls>
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/install/deploy.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-codeflare-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-dashboard-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-data-science-pipelines-operator-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-kserve-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-model-mesh-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-model-mesh-overlays-odh-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-odh-model-controller-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-odh-notebook-controller-kf-notebook-controller-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-ray-crd.yaml,
-                        https://raw.githubusercontent.com/bdattoma/sokar/main/open-data-hub/client/odh-manifests-trustyai-service-operator-crd.yaml
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/install/deploy.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-codeflare-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-dashboard-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-data-science-pipelines-operator-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-kserve-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-model-mesh-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-model-mesh-overlays-odh-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-odh-model-controller-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-odh-notebook-controller-kf-notebook-controller-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-ray-crd.yaml,
+                        https://raw.githubusercontent.com/bdattoma/deployment-hub/main/open-data-hub/client/odh-manifests-trustyai-service-operator-crd.yaml
                     </urls>
                     <extraAnnotations>true</extraAnnotations>
                     <alwaysPreserveUnknown>true</alwaysPreserveUnknown>
